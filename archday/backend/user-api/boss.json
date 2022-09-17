@@ -1,0 +1,13 @@
+{
+	"name": "user-api",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^3.0.2",
+		"github.com/hashload/jhonson": "^1.1.4",
+		"https://github.com/gabrielbaltazar/gbjson": "^1.0.10"
+	}
+}
