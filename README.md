@@ -1,2 +1,2 @@
 # oneday
-O dia D, onde nós da academia do código teremos um dia inteiro de muito conteúdo
+Conteúdo do treinamento de micro serviços e escalabilidade
