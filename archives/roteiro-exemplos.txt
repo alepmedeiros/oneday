@@ -1,0 +1,47 @@
+Roteiro de processos de publicação dos dockers no heroku e preparação das variaveis de ambiente
+1 - build do docker
+	docker build -t $APP_NAME .
+
+2 - Começar a levar a imagem docker para o heroku
+	heroku login
+	heroku container:login
+	heroku create -a $APP_NAME
+	heroku container:push web -a $APP_NAME
+	heroku container:release web -a $APP_NAME
+	heroku addons:create heroku-postgresql:hobby-dev -a $APP_NAME
+	
+3 - Após criado os projeto, vamos criar o dyno do postgresql e executar o script de criação das estruturas
+4 - Adicionar as variaveis de ambeintes nos projetos do heroku
+
+
+export APP_NAME=appautenticacaohorse
+docker build -t $APP_NAME .
+heroku create -a $APP_NAME
+heroku container:push web -a $APP_NAME
+heroku container:release web -a $APP_NAME
+
+Server autenticate: https://appatutentication.herokuapp.com/
+Server cadastro: https://appcadastrohorse.herokuapp.com/
+Server vendas: https://apppedidoshorse.herokuapp.com/
+
+export APP_NAME=appatutentication
+export APP_NAME=appcadastrohorse
+export APP_NAME=apppedidoshorse
+
+export PORT=9000 && export DATABASE=dados && export DATABASE_USER=root && export DATABASE_PWD=1 && export DATABASE_HOST=localhost && export CADASTRO_HOST=http://localhost:9001 && export AUTENTICATION_HOST=http://localhost:9000
+
+
+
+heroku config:set DATABASE_HOST=ec2-35-170-146-54.compute-1.amazonaws.com -a $APP_NAME
+heroku config:set DATABASE=dc3052aghlskaa -a $APP_NAME
+heroku config:set DATABASE_USER=qxapdgpfupbjpa -a $APP_NAME
+heroku config:set DATABASE_PWD=dffb9366c5958867e15a9e5adff0b96e54d8360a09cd2919895089594b5a9142 -a $APP_NAME
+
+
+
+heroku config:set AUTENTICATION_HOST=https://appautenticacaohorse.herokuapp.com -a $APP_NAME
+heroku config:set CADASTRO_HOST=https://appcadastroshorse.herokuapp.com -a $APP_NAME
+
+
+967
+968

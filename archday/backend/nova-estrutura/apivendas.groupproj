@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{8C0D37B3-6FB0-4449-A59A-81AA6CB1EBAD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="cadastros-api\cadastros.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="pedidos-api\pedidos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="autenticacao-api\autenticacao.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="cadastros">
+        <MSBuild Projects="cadastros-api\cadastros.dproj"/>
+    </Target>
+    <Target Name="cadastros:Clean">
+        <MSBuild Projects="cadastros-api\cadastros.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="cadastros:Make">
+        <MSBuild Projects="cadastros-api\cadastros.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="pedidos">
+        <MSBuild Projects="pedidos-api\pedidos.dproj"/>
+    </Target>
+    <Target Name="pedidos:Clean">
+        <MSBuild Projects="pedidos-api\pedidos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pedidos:Make">
+        <MSBuild Projects="pedidos-api\pedidos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="autenticacao">
+        <MSBuild Projects="autenticacao-api\autenticacao.dproj"/>
+    </Target>
+    <Target Name="autenticacao:Clean">
+        <MSBuild Projects="autenticacao-api\autenticacao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="autenticacao:Make">
+        <MSBuild Projects="autenticacao-api\autenticacao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="cadastros;pedidos;autenticacao"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="cadastros:Clean;pedidos:Clean;autenticacao:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="cadastros:Make;pedidos:Make;autenticacao:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,67 @@
+* Autenticacao
+
+- Mostrar criação, estruturar, e instalação das bibliotecas usadas
+- Criar a classe de conexão
+- Criar a classe service generica
+- Criar classe de mapeamento e o dto, mostrando as diversas possibilidades de uso
+- Criando a camada utils mostrando o acoplamento de bibliotecas separadamente.
+- Criando a camada de controller
+- Criand a documentação de desenvolvimento no Postmam
+
+* Cadastros
+
+- Criar novamente a estrutura seguindo o que já foi mostrado anteriormente
+- Reaproveitando classes que foram criadas genericamente, mostrando a praticidade de trabalhar com códigos desacoplados e sem dependencias, dando a possibilidade de reaproveitamento de código em outros projetos
+- Criação das classes de mapeamento
+- Criação dos DTO e mostrando a praticidade de trabalhar com o simpleorm
+- criar o utils do projeto, para trabalhar com as classes DTO e de mapeamentos
+- criar o controller para cada classe 
+- criar middlwer de autenticacao horse
+
+* Pedidos
+
+- criar as classes de mapeamentos
+- criar os dtos
+- criar classe abstrata de conexao http
+- criar o controller
+
+* Montar a documentação do Postmam
+- Criar documentação para cada api
+- Criar variaveis de ambiente para o postmam
+- Exportanto a documentação e a collection
+
+* Criar Imagens docker
+- Montar imagem docker das apis
+- Preparar a imagem da autenticaçao para se comportar como proxy reverso
+- Enviar para o heroku
+
+===================================================================
+
+* Fonte de inspirações para o layout mobile
+- Mostrar as imagens usadas como inspiração
+
+* Preparar o projeto
+- Criar o projeto mobile
+- Instalar as bibliotecas usadas
+- estruturar o projeto
+
+* Componentizando o projeto
+- Preparando os componentes que serão usados no projeto
+
+* Criando os roteamentos de tela
+- criando classe que irá trabalhar o roteamento das telas
+
+* criar rotas (http)
+- criar classe generica para a conexao servidor
+
+* criar tela de login
+- modelar a tela principal
+- preprar os splash mobile personalizado
+- criar a tela de login
+
+* tela de listagem de pedidos
+- modelar a tela de listagem de pedidos
+- pedidos visualizados por clientes
+
+* criar tela de pedido
+- modelar a tela de solicitação de pedidos

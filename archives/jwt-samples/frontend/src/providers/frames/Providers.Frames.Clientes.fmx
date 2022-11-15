@@ -1,0 +1,66 @@
+object FrameClientes: TFrameClientes
+  Size.Width = 350.000000000000000000
+  Size.Height = 70.000000000000000000
+  Size.PlatformDefault = False
+  object retContent: TRectangle
+    Align = Client
+    Fill.Color = xFF222228
+    Size.Width = 350.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblEmail: TLabel
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [Family]
+      Position.X = 10.000000000000000000
+      Position.Y = 37.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      Text = 'Email'
+      TabOrder = 0
+    end
+    object lblNome: TLabel
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [Family]
+      Position.X = 10.000000000000000000
+      Position.Y = 13.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'Nome'
+      TabOrder = 1
+    end
+    object lineSeparator: TLine
+      Align = Bottom
+      LineType = Bottom
+      Opacity = 0.500000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 69.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+    end
+    object lblTelefone: TLabel
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [Family]
+      Position.X = 224.000000000000000000
+      Position.Y = 37.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      Text = 'Telefone'
+      TabOrder = 2
+    end
+  end
+end

@@ -1,0 +1,15 @@
+{
+	"name": "cadastros",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/handle-exception": "^0.1.4",
+		"github.com/hashload/horse": "^2.0.12",
+		"github.com/hashload/jhonson": "^1.1.1",
+		"github.com/viniciussanchez/dataset-serialize": "^v2.2.6",
+		"github.com/viniciussanchez/restrequest4delphi": "^v3.0.4"
+	}
+}
