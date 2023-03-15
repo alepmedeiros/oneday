@@ -1,0 +1,19 @@
+object pageindex: Tpageindex
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 750
+  ClientWidth = 390
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object LayoutContainer: TLayout
+    Align = Client
+    Size.Width = 390.000000000000000000
+    Size.Height = 750.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+end

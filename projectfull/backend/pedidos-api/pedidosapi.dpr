@@ -16,7 +16,6 @@ uses
   pedidosapi.backend.model.entity.pedidoitens in 'src\model\entity\pedidosapi.backend.model.entity.pedidoitens.pas',
   pedidosapi.backend.dto.pedido in 'src\dto\pedidosapi.backend.dto.pedido.pas',
   pedidosapi.backend.dto.pedidoitens in 'src\dto\pedidosapi.backend.dto.pedidoitens.pas',
-  pedidosapi.backend.dto.produto in 'src\dto\pedidosapi.backend.dto.produto.pas',
   pedidosapi.backend.controller.pedido in 'src\controller\pedidosapi.backend.controller.pedido.pas',
   pedidosapi.bachend.auth.interfaces in 'src\auth\pedidosapi.bachend.auth.interfaces.pas',
   pedidosapi.bachend.auth.impl.httpclient in 'src\auth\impl\pedidosapi.bachend.auth.impl.httpclient.pas',
@@ -41,14 +40,12 @@ begin
     .use(jhonson)
     .use(AuthHandler);
 
-//  cadastroapi.backend.controller.cliente.Registery(lApp);
-//  cadastroapi.backend.controller.categoria.Registery(lApp);
-//  cadastroapi.backend.controller.produto.Registery(lApp);
+  pedidosapi.backend.controller.pedido.Registery(lApp);
 
   lApp.Listen(lPort,
   procedure (Horse:THorse)
   begin
-    System.Writeln(Format('Servidor de autenticacao rodando, porta %d',[Horse.Port]));
+    System.Writeln(Format('Servidor de pedidos rodando, porta %d',[Horse.Port]));
     System.Readln;
   end);
 end;

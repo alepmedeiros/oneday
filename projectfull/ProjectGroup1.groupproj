@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9BDC19ED-7733-47F2-AAD8-502D144AEC4A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="frontend\mobile\ACPedidos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="backend\user-api\userapi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="backend\cadastro-api\cadastroapi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="backend\pedidos-api\pedidosapi.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ACPedidos">
+        <MSBuild Projects="frontend\mobile\ACPedidos.dproj"/>
+    </Target>
+    <Target Name="ACPedidos:Clean">
+        <MSBuild Projects="frontend\mobile\ACPedidos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ACPedidos:Make">
+        <MSBuild Projects="frontend\mobile\ACPedidos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="userapi">
+        <MSBuild Projects="backend\user-api\userapi.dproj"/>
+    </Target>
+    <Target Name="userapi:Clean">
+        <MSBuild Projects="backend\user-api\userapi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="userapi:Make">
+        <MSBuild Projects="backend\user-api\userapi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="cadastroapi">
+        <MSBuild Projects="backend\cadastro-api\cadastroapi.dproj"/>
+    </Target>
+    <Target Name="cadastroapi:Clean">
+        <MSBuild Projects="backend\cadastro-api\cadastroapi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="cadastroapi:Make">
+        <MSBuild Projects="backend\cadastro-api\cadastroapi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="pedidosapi">
+        <MSBuild Projects="backend\pedidos-api\pedidosapi.dproj"/>
+    </Target>
+    <Target Name="pedidosapi:Clean">
+        <MSBuild Projects="backend\pedidos-api\pedidosapi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pedidosapi:Make">
+        <MSBuild Projects="backend\pedidos-api\pedidosapi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ACPedidos;userapi;cadastroapi;pedidosapi"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ACPedidos:Clean;userapi:Clean;cadastroapi:Clean;pedidosapi:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ACPedidos:Make;userapi:Make;cadastroapi:Make;pedidosapi:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

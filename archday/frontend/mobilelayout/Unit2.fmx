@@ -1,0 +1,231 @@
+object Frame2: TFrame2
+  Size.Width = 390.000000000000000000
+  Size.Height = 90.000000000000000000
+  Size.PlatformDefault = False
+  object Layout4: TLayout
+    Align = Client
+    Size.Width = 390.000000000000000000
+    Size.Height = 90.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = -0.127329185605049100
+        end
+        item
+          Color = x006B6B6B
+          Offset = -0.124223604798317000
+        end
+        item
+          Color = x003D3D3D
+          Offset = -0.121118009090423600
+        end
+        item
+          Color = xD626234C
+          Offset = -0.114906832575798000
+        end
+        item
+          Color = xFF211E4F
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xE225224D
+          Offset = 1.000000000000000000
+        end
+        item
+          Color = xE224214E
+          Offset = 1.012422323226929000
+        end
+        item
+          Color = xDB26234C
+          Offset = 1.015527963638306000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Opacity = 0.980000019073486300
+      Size.Width = 390.000000000000000000
+      Size.Height = 90.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Layout1: TLayout
+        Align = Center
+        Size.Width = 306.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object ImageHome: TImage
+          Tag = 1
+          MultiResBitmap = <
+            item
+              Width = 24
+              Height = 24
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                01E149444154484BDD94CD4EC240108067B79870F0806F80378F7A8568F0118C
+                46F1043E019018A970A81C6CA817E109F4A6FC247AF426899278F4117C044D4C
+                F0D0EEBA33DD46C1D262A207FD9266A633B333DBCEECC29F87691989553A4BB9
+                C979CB05B79860460A409CBF8E4695767BEF59874C25B68055BD48BB0057C08C
+                656DF291DE630260A3E1EC3E694B285CCB502839336E31B9047872A5B7880FEA
+                68431FC6E8F050A616A8ED77298152D3B85B4F7AEB8EDA2D3EA85311E5C3188C
+                A545218416A89BBD826778945C801CBCBEBD5172DF0B80FADC686E454AB856AF
+                698CAD9B9D82EF1DE74B0F6A66D752C623D42588B6DDCC97C93185DAC1658B71
+                5E425D7DD591DDDC6E90436368497C4E0E52366C276F921EC1DDB07FB396DD62
+                C0584EADCD65339B2FF7C3FE83768FFF221550442985A81C3B3B7EA119C0585C
+                83BA64D222A366B2073411F649BE456FDF2058E39F930F22C7F4275067251EEC
+                8D1ACD72B03B75169E13C0CFD5AFA1DF1245EC17D4ABBD536CFCE74F279DB1F2
+                61B513DBA7D80278FF905427F8B8B9CDF0411D6D02048D6714B105829D4F1E34
+                94930D0DE3D79BFCCF0AE0F8A18CBB82C308D6043902D4047E8063C7191B3BEA
+                DF65F2821CBBECD4253558CD6C2E78209638E3496D9E09DC3907E6CC7241FE25
+                00DE015873C7A2D40576B30000000049454E44AE426082}
+              FileName = 
+                'C:\MyRepository\oneday\archday\frontend\mobilelayout\asserts\Hou' +
+                'se.png'
+            end>
+          Align = Left
+          Margins.Right = 70.000000000000000000
+          Size.Width = 24.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          object ShadowHome: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 1.000000000000000000
+            Opacity = 0.000000000000000000
+            ShadowColor = claWhite
+          end
+        end
+        object ImageCard: TImage
+          Tag = 2
+          MultiResBitmap = <
+            item
+              Width = 24
+              Height = 24
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                011649444154484B631805C31F30426930A8AA5855FFEFFFDF0266466601A810
+                49E0EFFFBF1F98199816B476861742851898A1344375F9EA7E4646860A264626
+                0EA810C900AC9791D1C2C63A84F1C8D135074062701F54942F7F0F72F99FFF7F
+                153B3B231F40854902E5E5CB15581899EF837CD2D1192908126302CB00012C58
+                C8351C04607A918318EE83EA8A55FFA14CAA80D68E30B0D9701FD01C807C400D
+                5FA09B43731FB040690C0074C57D20A500E181C10360B82A42D944039C3E400F
+                2BAA871DB980EE7100B70094FB40743D30378205C80030BD30B340009ED12ACB
+                5736303132D643B91481FF0CFF26B675441480D8F0C20E5438D95A050BFE63F8
+                A7416E81077239130363675B6744055468140C38606000008B6E66196604547A
+                0000000049454E44AE426082}
+              FileName = 
+                'C:\MyRepository\oneday\archday\frontend\mobilelayout\asserts\cre' +
+                'dit card.png'
+            end>
+          Align = Left
+          Margins.Right = 70.000000000000000000
+          Position.X = 94.000000000000000000
+          Size.Width = 24.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          object ShadowCard: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 1.000000000000000000
+            Opacity = 0.000000000000000000
+            ShadowColor = claWhite
+          end
+        end
+        object ImageProfile: TImage
+          Tag = 3
+          MultiResBitmap = <
+            item
+              Width = 24
+              Height = 24
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                024F49444154484BD595515213411040A7779772837CE00DE0042627104EA07C
+                10E14B3941922A359858B5A4CAAC8952457282E897183EC0138827006F9023E4
+                C354B0C86CDBDD6EB6167666D5FCF1AAA0677A67BAA7A7BB27EACE03B1B41254
+                06ABD785FB1554B8E128D81025EA4B055EAFDDD9FE24F31C721D04F5CF6B3370
+                BFD170ED8F26C3C843BDD9EAEE8EE27906279646E6C6910CD1A9377F4E270FDA
+                9D32808EB64447DF784D85A2940D06AC0E1AF5E17312627C329D94DADDDDF37E
+                7F6FCCDFDE7ED8395B9A2E95E64E96FDE52AEB4D581D80D2151938509D1B4ED3
+                EA6F8D01F59E4C403D1269C07E45E0165984E1F657991BF0AEFC4B9649F20DE4
+                E680C9BB5F8E221E5AB13A88149EB35CF17D89C4C49B97C74F58CEB86C2DD823
+                40F55D24B8035314DC1FE83A473CF6C0E989D280B50F82CA2935D8F5052DE01E
+                18453AAABDA3EA61C357FE4AD1031C905EAA2CEC94D7659381DC466BBC1816C1
+                5317F13483463D2607A5EE228DF69AEE377235379A1517DC558F1AADB97FF22C
+                5665303A68D64F8E1CD73965039C6C00ACD293B0CE5DCC7F385325A41E98371A
+                25EC63B3FE45F2719BCC1535F68701290F387C07A115BEDFB1269069BC3AAE46
+                80011F4621F6DADDA7B5F89370C3013F0F008A93A7F894E161D95A7E6938577C
+                9DEC444751AD933AD48D2B22E3014BA445FF6A9CE1B51CAD4C289A7459270ED2
+                8FDBDFAEC504EFE17C7114857B05B625A42378CCFF40E181CC1680F6CABB05A8
+                92B7297140AFA7FCA8FC9AC10F512C80463C634915F8501444E22002879B6674
+                F81F777F1B6E38295DAAC05875E751EA37C7F7EB225ECE42B40000000049454E
+                44AE426082}
+              FileName = 
+                'C:\MyRepository\oneday\archday\frontend\mobilelayout\asserts\Pro' +
+                'file.png'
+            end>
+          Align = Left
+          Position.X = 188.000000000000000000
+          Size.Width = 24.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = ImageProfileClick
+          object ShadowProfile: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 1.000000000000000000
+            Opacity = 0.000000000000000000
+            ShadowColor = claWhite
+          end
+        end
+        object ImageStatic: TImage
+          Tag = 4
+          MultiResBitmap = <
+            item
+              Width = 24
+              Height = 24
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                009349444154484B63A0356084D2784175C5AAFB404A01C2838307AD1D618A50
+                364EC004A5090174C341009B180620D6023000BA981184A15CA2004916900346
+                2D2008686E010B94A608E0CB27D4F201CE7C42D520C2964FE813079494358400
+                CC0738C39052801244D8C2905240F33818B58020A0B905286511303FFC8732B1
+                0272E4C13E008A3E00F39000B218A5F234040C0C00AC9A2B58BE3AFCFA000000
+                0049454E44AE426082}
+              FileName = 
+                'C:\MyRepository\oneday\archday\frontend\mobilelayout\asserts\Sta' +
+                'tistic.png'
+            end>
+          Align = Right
+          Position.X = 282.000000000000000000
+          Size.Width = 24.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = ImageStaticClick
+          object ShadowStatic: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 1.000000000000000000
+            Opacity = 0.000000000000000000
+            ShadowColor = claWhite
+          end
+        end
+      end
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+end

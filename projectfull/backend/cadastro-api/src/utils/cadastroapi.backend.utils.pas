@@ -352,6 +352,7 @@ end;
 function TProdutoHelper.Convert(Value: TCategoria): TProdutoDTO;
 begin
   Result := TProdutoDTO.New;
+
   Result.Id := Self.Id;
   Result.Descricao := Self.Descricao;
   Result.Preco := Self.Preco;

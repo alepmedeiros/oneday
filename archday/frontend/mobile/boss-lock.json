@@ -1,0 +1,46 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2022-11-19T22:20:32.5222472-03:00",
+	"installedModules": {
+		"github.com/viniciussanchez/dataset-serialize": {
+			"name": "dataset-serialize",
+			"version": "v2.4.6",
+			"hash": "a780e8b3ae0506632750d3e0e18cd944",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/academiadocodigo/router4delphi": {
+			"name": "router4delphi",
+			"version": "1.0.7",
+			"hash": "6d80dfbd1d8600dc82811853cd2d4919",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/gabrielbaltazar/gbjson": {
+			"name": "gbjson",
+			"version": "1.0.10",
+			"hash": "e3b3e50212b8d5417f63aad438550798",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/viniciussanchez/dataset-serialize": {
+			"name": "dataset-serialize",
+			"version": "v2.4.6",
+			"hash": "a780e8b3ae0506632750d3e0e18cd944",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/viniciussanchez/restrequest4delphi": {
+			"name": "restrequest4delphi",
+			"version": "v3.0.19",
+			"hash": "e994e86f9af5f31c1d2d9ed5c822d57b",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

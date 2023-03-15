@@ -1,0 +1,9 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Button1: TButton
+    Position.X = 184.000000000000000000
+    OnClick = Button1Click
+  end
+end

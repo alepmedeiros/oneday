@@ -44,6 +44,5 @@ begin
 end;
 
 begin
-  ReportMemoryLeaksOnShutdown := True;
   IniciarHorse;
 end.

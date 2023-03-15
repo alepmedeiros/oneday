@@ -4,6 +4,8 @@ RUN apt-get update -y && \
     apt-get install -y curl && \
     apt-get autoclean -y && \
     apt-get autoremove -y
+RUN mkdir /app && chmod -R 777 /app
+ENV DATABASE /app/dados.sdb
 ADD ./bin/cadastroapi /app/cadastroapi
-ADD ../db/dados.sdb /app/dados.sdb
+COPY ./bin/dados.sdb /app/dados.sdb
 ENTRYPOINT /app/cadastroapi

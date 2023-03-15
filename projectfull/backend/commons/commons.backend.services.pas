@@ -122,7 +122,8 @@ end;
 function TServices<T>.Insert(Value: T): T;
 begin
   FDAO.Insert(Value);
-  Result := TGBJSONDefault.Serializer<T>.JsonObjectToObject(FDataSource.DataSet.ToJSONObject);
+  Result := Value;
+//  Result := TGBJSONDefault.Serializer<T>.JsonObjectToObject(FDataSource.DataSet.ToJSONObject);
 end;
 
 class function TServices<T>.New: iServices<T>;
@@ -133,7 +134,8 @@ end;
 function TServices<T>.Update(Value: T): T;
 begin
   FDAO.Update(Value);
-  Result := TGBJSONDefault.Serializer<T>.JsonObjectToObject(FDataSource.DataSet.ToJSONObject);
+  Result := Value;
+//  Result := TGBJSONDefault.Serializer<T>.JsonObjectToObject(FDataSource.DataSet.ToJSONObject);
 end;
 
 end.

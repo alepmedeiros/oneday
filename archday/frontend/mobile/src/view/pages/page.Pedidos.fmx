@@ -1,0 +1,465 @@
+object PagePedidos: TPagePedidos
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 780
+  ClientWidth = 390
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayoutContainer: TLayout
+    Align = Client
+    Size.Width = 390.000000000000000000
+    Size.Height = 780.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 390.000000000000000000
+      Size.Height = 780.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Layout1: TLayout
+        Align = Top
+        Padding.Top = 10.000000000000000000
+        Size.Width = 390.000000000000000000
+        Size.Height = 313.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Layout2: TLayout
+          Align = Top
+          Position.Y = 10.000000000000000000
+          Size.Width = 390.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Label1: TLabel
+            Align = Client
+            StyledSettings = [Family, Style, FontColor]
+            Size.Width = 290.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 25.000000000000000000
+            TextSettings.HorzAlign = Center
+            Text = 'Pedidos'
+            TabOrder = 0
+          end
+          object Layout20: TLayout
+            Align = Right
+            Position.X = 340.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object SpeedButton3: TSpeedButton
+              Align = Client
+              ModalResult = 5
+              Size.Width = 50.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'bookmarkstoolbutton'
+              Text = 'SpeedButton3'
+              OnClick = SpeedButton3Click
+            end
+          end
+          object Layout21: TLayout
+            Align = Left
+            Size.Width = 50.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SpeedButton2: TSpeedButton
+              Align = Client
+              Size.Width = 50.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'arrowlefttoolbuttonbordered'
+              Text = 'SpeedButton2'
+              OnClick = SpeedButton2Click
+            end
+          end
+        end
+        object Layout3: TLayout
+          Align = Top
+          Margins.Top = 10.000000000000000000
+          Position.Y = 69.000000000000000000
+          Size.Width = 390.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          object Layout4: TLayout
+            Align = Left
+            Size.Width = 120.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Layout5: TLayout
+              Align = Top
+              Padding.Left = 5.000000000000000000
+              Padding.Top = 5.000000000000000000
+              Padding.Right = 5.000000000000000000
+              Padding.Bottom = 5.000000000000000000
+              Size.Width = 120.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object Rectangle2: TRectangle
+                Align = Client
+                Fill.Color = claWhite
+                Size.Width = 110.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object edtCodigoCliente: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Contents
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 105.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Codigo Cliente'
+                end
+              end
+              object ShadowEffect1: TShadowEffect
+                Distance = 3.000000000000000000
+                Direction = 45.000000000000000000
+                Softness = 0.300000011920929000
+                Opacity = 0.100000001490116100
+                ShadowColor = claBlack
+              end
+            end
+          end
+          object Layout6: TLayout
+            Align = Client
+            Size.Width = 270.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Layout7: TLayout
+              Align = Top
+              Padding.Left = 5.000000000000000000
+              Padding.Top = 5.000000000000000000
+              Padding.Right = 5.000000000000000000
+              Padding.Bottom = 5.000000000000000000
+              Size.Width = 270.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object Rectangle3: TRectangle
+                Align = Client
+                Fill.Color = claWhite
+                Size.Width = 260.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object edtCliente: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Contents
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 255.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Nome do Cliente'
+                end
+              end
+              object ShadowEffect2: TShadowEffect
+                Distance = 3.000000000000000000
+                Direction = 45.000000000000000000
+                Softness = 0.300000011920929000
+                Opacity = 0.100000001490116100
+                ShadowColor = claBlack
+              end
+            end
+          end
+        end
+        object Layout8: TLayout
+          Align = Top
+          Margins.Top = 10.000000000000000000
+          Position.Y = 129.000000000000000000
+          Size.Width = 390.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object Layout9: TLayout
+            Align = Left
+            Size.Width = 120.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Layout10: TLayout
+              Align = Top
+              Padding.Left = 5.000000000000000000
+              Padding.Top = 5.000000000000000000
+              Padding.Right = 5.000000000000000000
+              Padding.Bottom = 5.000000000000000000
+              Size.Width = 120.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object Rectangle4: TRectangle
+                Align = Client
+                Fill.Color = claWhite
+                Size.Width = 110.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object edtCodigoProduto: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Contents
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 105.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Codigo Produto'
+                end
+              end
+              object ShadowEffect3: TShadowEffect
+                Distance = 3.000000000000000000
+                Direction = 45.000000000000000000
+                Softness = 0.300000011920929000
+                Opacity = 0.100000001490116100
+                ShadowColor = claBlack
+              end
+            end
+          end
+          object Layout11: TLayout
+            Align = Client
+            Size.Width = 270.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Layout12: TLayout
+              Align = Top
+              Padding.Left = 5.000000000000000000
+              Padding.Top = 5.000000000000000000
+              Padding.Right = 5.000000000000000000
+              Padding.Bottom = 5.000000000000000000
+              Size.Width = 270.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object Rectangle5: TRectangle
+                Align = Client
+                Fill.Color = claWhite
+                Size.Width = 260.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object edtDescricaoProduto: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Contents
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 255.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Descri'#231#227'o do Produto'
+                end
+              end
+              object ShadowEffect4: TShadowEffect
+                Distance = 3.000000000000000000
+                Direction = 45.000000000000000000
+                Softness = 0.300000011920929000
+                Opacity = 0.100000001490116100
+                ShadowColor = claBlack
+              end
+            end
+          end
+        end
+        object Layout13: TLayout
+          Align = Top
+          Margins.Top = 10.000000000000000000
+          Position.Y = 189.000000000000000000
+          Size.Width = 390.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Layout14: TLayout
+            Align = Left
+            Size.Width = 195.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Layout15: TLayout
+              Align = Top
+              Padding.Left = 5.000000000000000000
+              Padding.Top = 5.000000000000000000
+              Padding.Right = 5.000000000000000000
+              Padding.Bottom = 5.000000000000000000
+              Size.Width = 195.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object Rectangle6: TRectangle
+                Align = Client
+                Fill.Color = claWhite
+                Size.Width = 185.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object edtQuantidade: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Contents
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 180.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Quantidade'
+                end
+              end
+              object ShadowEffect5: TShadowEffect
+                Distance = 3.000000000000000000
+                Direction = 45.000000000000000000
+                Softness = 0.300000011920929000
+                Opacity = 0.100000001490116100
+                ShadowColor = claBlack
+              end
+            end
+          end
+          object Layout16: TLayout
+            Align = Client
+            Size.Width = 195.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Layout17: TLayout
+              Align = Top
+              Padding.Left = 5.000000000000000000
+              Padding.Top = 5.000000000000000000
+              Padding.Right = 5.000000000000000000
+              Padding.Bottom = 5.000000000000000000
+              Size.Width = 195.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object Rectangle7: TRectangle
+                Align = Client
+                Fill.Color = claWhite
+                Size.Width = 185.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object edtValorUnitario: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Contents
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 180.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Valor Unit'#225'rio'
+                end
+              end
+              object ShadowEffect6: TShadowEffect
+                Distance = 3.000000000000000000
+                Direction = 45.000000000000000000
+                Softness = 0.300000011920929000
+                Opacity = 0.100000001490116100
+                ShadowColor = claBlack
+              end
+            end
+          end
+        end
+        object Layout18: TLayout
+          Align = Top
+          Padding.Left = 10.000000000000000000
+          Padding.Right = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Position.Y = 249.000000000000000000
+          Size.Width = 390.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          object Rectangle8: TRectangle
+            Align = Client
+            Fill.Color = xFF1E319D
+            Size.Width = 370.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+            object SpeedButton1: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, Style]
+              Size.Width = 370.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Adicionar Produto'
+              TextSettings.Font.Size = 15.000000000000000000
+              TextSettings.FontColor = claWhite
+              OnClick = SpeedButton1Click
+            end
+          end
+        end
+      end
+      object Layout19: TLayout
+        Align = Client
+        Size.Width = 390.000000000000000000
+        Size.Height = 467.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object vsbPedidos: TVertScrollBox
+          Align = Client
+          Size.Width = 390.000000000000000000
+          Size.Height = 443.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 390.000000000000000000
+          Viewport.Height = 443.000000000000000000
+        end
+        object Layout22: TLayout
+          Align = Top
+          Size.Width = 390.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label2: TLabel
+            Align = Left
+            StyledSettings = [Family, FontColor]
+            Size.Width = 84.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Total Geral: '
+            TabOrder = 0
+          end
+          object lblTotal: TLabel
+            Align = Client
+            StyledSettings = [Family, Style, FontColor]
+            Size.Width = 306.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            TabOrder = 1
+          end
+        end
+      end
+    end
+  end
+end

@@ -12,6 +12,24 @@
         <Projects Include="..\projectfull\backend\pedidos-api\pedidosapi.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="frontend\mobile\ACPedidos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="frontend\mobilelayout\Project1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="exemplosExtras\jwt-samples\frontend\FrontEnd.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="frontend\mobile\modules\router4delphi\Samples\FMX\Demo\Router4DelphiDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\delphi-mvc-orm\ProjetoSimpleORM.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\projectfull\backend\pedidos-api\modules\simpleorm\SimpleORM.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -47,14 +65,68 @@
     <Target Name="pedidosapi:Make">
         <MSBuild Projects="..\projectfull\backend\pedidos-api\pedidosapi.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ACPedidos">
+        <MSBuild Projects="frontend\mobile\ACPedidos.dproj"/>
+    </Target>
+    <Target Name="ACPedidos:Clean">
+        <MSBuild Projects="frontend\mobile\ACPedidos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ACPedidos:Make">
+        <MSBuild Projects="frontend\mobile\ACPedidos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project1">
+        <MSBuild Projects="frontend\mobilelayout\Project1.dproj"/>
+    </Target>
+    <Target Name="Project1:Clean">
+        <MSBuild Projects="frontend\mobilelayout\Project1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1:Make">
+        <MSBuild Projects="frontend\mobilelayout\Project1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FrontEnd">
+        <MSBuild Projects="exemplosExtras\jwt-samples\frontend\FrontEnd.dproj"/>
+    </Target>
+    <Target Name="FrontEnd:Clean">
+        <MSBuild Projects="exemplosExtras\jwt-samples\frontend\FrontEnd.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FrontEnd:Make">
+        <MSBuild Projects="exemplosExtras\jwt-samples\frontend\FrontEnd.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Router4DelphiDemo">
+        <MSBuild Projects="frontend\mobile\modules\router4delphi\Samples\FMX\Demo\Router4DelphiDemo.dproj"/>
+    </Target>
+    <Target Name="Router4DelphiDemo:Clean">
+        <MSBuild Projects="frontend\mobile\modules\router4delphi\Samples\FMX\Demo\Router4DelphiDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Router4DelphiDemo:Make">
+        <MSBuild Projects="frontend\mobile\modules\router4delphi\Samples\FMX\Demo\Router4DelphiDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProjetoSimpleORM">
+        <MSBuild Projects="..\..\delphi-mvc-orm\ProjetoSimpleORM.dproj"/>
+    </Target>
+    <Target Name="ProjetoSimpleORM:Clean">
+        <MSBuild Projects="..\..\delphi-mvc-orm\ProjetoSimpleORM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProjetoSimpleORM:Make">
+        <MSBuild Projects="..\..\delphi-mvc-orm\ProjetoSimpleORM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SimpleORM">
+        <MSBuild Projects="..\projectfull\backend\pedidos-api\modules\simpleorm\SimpleORM.dproj"/>
+    </Target>
+    <Target Name="SimpleORM:Clean">
+        <MSBuild Projects="..\projectfull\backend\pedidos-api\modules\simpleorm\SimpleORM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SimpleORM:Make">
+        <MSBuild Projects="..\projectfull\backend\pedidos-api\modules\simpleorm\SimpleORM.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="userapi;cadastroapi;pedidosapi"/>
+        <CallTarget Targets="userapi;cadastroapi;pedidosapi;ACPedidos;Project1;FrontEnd;Router4DelphiDemo;ProjetoSimpleORM;SimpleORM"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="userapi:Clean;cadastroapi:Clean;pedidosapi:Clean"/>
+        <CallTarget Targets="userapi:Clean;cadastroapi:Clean;pedidosapi:Clean;ACPedidos:Clean;Project1:Clean;FrontEnd:Clean;Router4DelphiDemo:Clean;ProjetoSimpleORM:Clean;SimpleORM:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="userapi:Make;cadastroapi:Make;pedidosapi:Make"/>
+        <CallTarget Targets="userapi:Make;cadastroapi:Make;pedidosapi:Make;ACPedidos:Make;Project1:Make;FrontEnd:Make;Router4DelphiDemo:Make;ProjetoSimpleORM:Make;SimpleORM:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

@@ -1,0 +1,55 @@
+object Frame3: TFrame3
+  Size.Width = 390.000000000000000000
+  Size.Height = 790.000000000000000000
+  Size.PlatformDefault = False
+  object Layout2: TLayout
+    Align = Contents
+    Size.Width = 390.000000000000000000
+    Size.Height = 790.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle3: TRectangle
+      Align = Client
+      Fill.Color = xFF19173D
+      Size.Width = 390.000000000000000000
+      Size.Height = 790.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 390.000000000000000000
+      Size.Height = 790.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rectangle1: TRectangle
+        Align = Center
+        Fill.Color = xFF262450
+        Size.Width = 390.000000000000000000
+        Size.Height = 834.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object Circle1: TCircle
+        Align = Top
+        Fill.Color = xFF19173D
+        Size.Width = 390.000000000000000000
+        Size.Height = 233.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object rectangle2: TRectangle
+        CornerType = InnerRound
+        Fill.Color = xFF19173D
+        Position.X = 44.000000000000000000
+        Position.Y = 54.000000000000000000
+        Size.Width = 302.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 35.000000000000000000
+        YRadius = 35.000000000000000000
+      end
+    end
+  end
+end

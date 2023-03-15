@@ -46,7 +46,7 @@ end;
 
 class function TProdutoDTO.New: TProdutoDTO;
 begin
-
+  Result := Self.Create;
 end;
 
 end.

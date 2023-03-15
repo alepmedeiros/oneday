@@ -13,13 +13,13 @@ uses
   userapi.backend.dto.usuario;
 
 function Autorizacao: THorseCallBack;
-function ValidarAutorizacao(aEmail, aSenha: String): Boolean;
+function ValidarAutorizacao(aUsuario, aSenha: String): Boolean;
 
 implementation
 
-function ValidarAutorizacao(aEmail, aSenha: String): Boolean;
+function ValidarAutorizacao(aUsuario, aSenha: String): Boolean;
 begin
-  Result := not (TServices<TUsuarios>.New.FindWhere('email', aEmail).Email.IsEmpty and
+  Result := not (TServices<TUsuarios>.New.FindWhere('nome', aUsuario).Nome.IsEmpty and
     TServices<TUsuarios>.New.FindWhere('senha', aSenha).senha.IsEmpty);
 end;
 

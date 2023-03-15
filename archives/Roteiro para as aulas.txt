@@ -6,12 +6,13 @@
 - Criar classe de mapeamento e o dto, mostrando as diversas possibilidades de uso
 - Criando a camada utils mostrando o acoplamento de bibliotecas separadamente.
 - Criando a camada de controller
-- Criand a documentação de desenvolvimento no Postmam
+- Colocando as chamdas para o horse no projeto, e dando disponibilidade as classes de conexão e services
+**- Criand a documentação de desenvolvimento no Postmam
 
 * Cadastros
 
 - Criar novamente a estrutura seguindo o que já foi mostrado anteriormente
-- Reaproveitando classes que foram criadas genericamente, mostrando a praticidade de trabalhar com códigos desacoplados e sem dependencias, dando a possibilidade de reaproveitamento de código em outros projetos
+(feito no anterior)- Reaproveitando classes que foram criadas genericamente, mostrando a praticidade de trabalhar com códigos desacoplados e sem dependencias, dando a possibilidade de reaproveitamento de código em outros projetos
 - Criação das classes de mapeamento
 - Criação dos DTO e mostrando a praticidade de trabalhar com o simpleorm
 - criar o utils do projeto, para trabalhar com as classes DTO e de mapeamentos

@@ -36,7 +36,7 @@ var
 begin
   {$IFDEF MSWINDOWS}
   lPort := 9001;
-  ServerAutentication := 'http://localhost:9000';
+  ServerAutentication := 'http://localhost:9000/usuarios';
   {$ELSE}
   lPort := StrToInt(GetEnvironmentVariable('PORT'));
   ServerAutentication := GetEnvironmentVariable('AUTENTICATION_HOST');
@@ -53,9 +53,9 @@ begin
   cadastroapi.backend.controller.produto.Registery(lApp);
 
   lApp.Listen(lPort,
-  procedure (Horse:THorse)
+  procedure (Horse: THorse)
   begin
-    System.Writeln(Format('Servidor de autenticacao rodando, porta %d',[Horse.Port]));
+    System.Writeln(Format('Servidor de cadastro rodando, porta %d',[lPort]));
     System.Readln;
   end);
 end;

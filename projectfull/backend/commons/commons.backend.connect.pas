@@ -9,21 +9,23 @@ uses
   FireDAC.Stan.Option,
   FireDAC.Stan.Error,
   FireDAC.UI.Intf,
-  FireDAC.Phys.Intf,
   FireDAC.Stan.Def,
   FireDAC.Stan.Pool,
   FireDAC.Stan.Async,
   FireDAC.Phys,
+  FireDAC.Phys.Intf,
+  Firedac.Phys.SQLite,
+  Firedac.Phys.SQLiteDef,
+  FireDAC.Phys.SQLiteWrapper.Stat,
   Data.DB,
   FireDAC.Comp.Client,
   Firedac.DApt,
-  Firedac.Phys.SQLite,
-  Firedac.Phys.SQLiteDef,
-  FireDAC.Comp.UI;
+  FireDAC.Comp.UI, System.SysUtils;
 
 
 var
   FConnList : TObjectList<TFDConnection>;
+  FDriver: TFDPhysSQLiteDriverLink;
 
 function Connected : Integer;
 procedure Disconnected(IndexConn : Integer);
@@ -44,14 +46,19 @@ begin
   if not Assigned(FConnList) then
     FConnList := TObjectList<TFDConnection>.Create;
 
+  try
     FConnList.Add(TFDConnection.Create(nil));
+    FDriver:= TFDPhysSQLiteDriverLink.Create(nil);
     IndexConn := Pred(FConnList.Count);
     FConnList.Items[IndexConn].Params.DriverID := 'SQLite';
 
     FConnList.Items[IndexConn].Params.Database := lDataBase;
     FConnList.Items[IndexConn].Params.Add('LockingMode=Normal');
     FConnList.Items[IndexConn].Connected;
-  Result := IndexConn;
+    Result := IndexConn;
+  except
+    raise Exception.Create('Erro ao tentar conectar ao banco de dados');
+  end;
 end;
 
 procedure Disconnected(IndexConn : Integer);

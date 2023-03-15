@@ -16,11 +16,11 @@ uses
   userapi.backend.model.entity.usuarios;
 
 procedure Registery(App: THorse);
-function Logar(aEmail, aSenha: String): TJSONObject;
+function Logar(aUsuario, aSenha: String): TJSONObject;
 
 implementation
 
-function Logar(aEmail, aSenha: String): TJSONObject;
+function Logar(aUsuario, aSenha: String): TJSONObject;
 var
   JWT: TJWT;
   Claims: TJWTClaims;
@@ -33,7 +33,7 @@ begin
   Claims.IssuedAt := Now;
   Claims.Expiration := IncHour(Now,1);
   lHora := trunc(Claims.Expiration);
-  if not ValidarAutorizacao(aEmail, aSenha) then
+  if not ValidarAutorizacao(aUsuario, aSenha) then
   begin
     Result := TJSONObject.Create.AddPair('error','Erro ao tentar validar o acesso');
     exit;
@@ -55,7 +55,7 @@ var
 begin
   lUsuario := TUsuarioDTO.New.JsonToObject(Req.Body);
 
-  Res.Send<TJsonObject>(Logar(lUsuario.Email, lUsuario.Senha));
+  Res.Send<TJsonObject>(Logar(lUsuario.Nome, lUsuario.Senha));
 end;
 
 procedure Cadastrar(Req: THorseRequest; Res: THorseResponse);
@@ -67,7 +67,7 @@ begin
   lUsuario := TUsuarioDTO.New.JsonToObject(Req.Body);
   lUsuario.id := TServices<TUsuarios>.New.Insert(lUsuario.Convert).Id;
 
-  Res.Send<TJsonObject>(Logar(lUsuario.Email, lUsuario.Senha));
+  Res.Send<TJsonObject>(Logar(lUsuario.Nome, lUsuario.Senha));
 end;
 
 procedure BuscarPorId(Req: THorseRequest; Res: THorseResponse);

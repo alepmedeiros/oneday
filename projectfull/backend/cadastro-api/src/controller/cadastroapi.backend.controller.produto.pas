@@ -32,11 +32,15 @@ var
   lDto: TObjectList<TProdutoDTO>;
   lProdutos: TObjectList<TProduto>;
 begin
-  lProdutos := TServices<TProduto>.New.FindAll;
+  try
+    lProdutos := TServices<TProduto>.New.FindAll;
 
-  LDTO := CarregaListaProdutoDTO(lProdutos);
+    LDTO := CarregaListaProdutoDTO(lProdutos);
 
-  Res.Send<TJSONArray>(TProdutoDTO.New.ListToJsonArray(lDto));
+    Res.Send<TJSONArray>(TProdutoDTO.New.ListToJsonArray(lDto));
+  except
+    Res.Status(404);
+  end;
 end;
 
 procedure ListarPorCodigo(Req: THorseRequest; Res: THorseResponse);
@@ -55,6 +59,8 @@ begin
   lProdutos := TServices<TProduto>.New
                 .FindWhere('id_categoria',Req.Params['categoria'].ToInteger);
   lDTO := CarregaListaProdutoDTO(lProdutos);
+
+  Res.Send<TJSONArray>(TProdutoDTO.New.ListToJsonArray(lDto));
 end;
 
 procedure NovoProduto(Req: THorseRequest; Res: THorseResponse);
@@ -63,9 +69,13 @@ var
   lCategoria: TCategoria;
 begin
   lDTO := TProdutoDTO.New.JsonToObject(Req.Body);
-  lCategoria := TServices<TCategoria>.New.Insert(lDTO.Categoria.Convert);
-  lDTO.Categoria.Id := lCategoria.Id;
-  TServices<TProduto>.New.Insert(lDTO.Convert);
+  lCategoria := TServices<TCategoria>.New.Find(ldto.Categoria.Id);
+  if lCategoria.Descricao.IsEmpty then begin
+    lCategoria := TServices<TCategoria>.New.Insert(lDTO.Categoria.Convert);
+    lDTO.Categoria.Id := lCategoria.Id;
+  end;
+  lDTo.Id := TServices<TProduto>.New.Insert(lDTO.Convert).Id;
+  Res.Send<TJSONObject>(ldto.ToJson);
 end;
 
 procedure AtualizarEstoque(Req: THorseRequest; Res: THorseResponse);

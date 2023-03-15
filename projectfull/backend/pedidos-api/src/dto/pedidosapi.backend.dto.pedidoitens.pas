@@ -2,10 +2,18 @@ unit pedidosapi.backend.dto.pedidoitens;
 
 interface
 
-uses
-  pedidosapi.backend.dto.produto;
-
 type
+  TProdutoDTO = class
+  private
+    FId: Integer;
+    FDescricao: String;
+  public
+    property Id: Integer read FId write FId;
+    property Descricao: String read FDescricao write FDescricao;
+
+    class function New: TProdutoDTO;
+  end;
+
   TPedidoItensDTO = class
   private
     FId: Integer;
@@ -50,7 +58,14 @@ end;
 
 class function TPedidoItensDTO.New: TPedidoItensDTO;
 begin
+  Result := Self.Create;
+end;
 
+{ TProdutoDTO }
+
+class function TProdutoDTO.New: TProdutoDTO;
+begin
+  Result := Self.Create;
 end;
 
 end.
