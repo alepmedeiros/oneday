@@ -39,6 +39,7 @@ object framepedidos: Tframepedidos
             Size.PlatformDefault = False
             TextSettings.Font.Size = 15.000000000000000000
             TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Trimming = None
             Text = 'Item:'
             TabOrder = 0
           end
@@ -49,6 +50,7 @@ object framepedidos: Tframepedidos
             Size.Height = 24.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Trimming = None
             Text = 'lblItem'
             TabOrder = 1
           end
@@ -62,6 +64,7 @@ object framepedidos: Tframepedidos
           Size.PlatformDefault = False
           TextSettings.Font.Size = 15.000000000000000000
           TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.Trimming = None
           Text = 'Produto:'
           TabOrder = 1
         end
@@ -72,6 +75,7 @@ object framepedidos: Tframepedidos
           Size.Height = 24.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Trimming = None
           Text = 'lblProduto'
           TabOrder = 2
         end
@@ -96,6 +100,7 @@ object framepedidos: Tframepedidos
             Size.PlatformDefault = False
             TextSettings.Font.Size = 15.000000000000000000
             TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Trimming = None
             Text = 'Quantidade:'
             TabOrder = 0
           end
@@ -106,6 +111,7 @@ object framepedidos: Tframepedidos
             Size.Height = 26.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Trimming = None
             Text = 'lblQuantidad'
             TabOrder = 1
           end
@@ -124,6 +130,7 @@ object framepedidos: Tframepedidos
             Size.PlatformDefault = False
             TextSettings.Font.Size = 15.000000000000000000
             TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Trimming = None
             Text = 'Varlo Unit'#225'rio:'
             TabOrder = 0
           end
@@ -134,6 +141,7 @@ object framepedidos: Tframepedidos
             Size.Height = 26.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Trimming = None
             Text = 'lblUnitario'
             TabOrder = 1
           end

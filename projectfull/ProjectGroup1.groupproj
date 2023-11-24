@@ -15,6 +15,15 @@
         <Projects Include="backend\pedidos-api\pedidosapi.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="..\..\kanbana-api\KanbanaApi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\exemplo-blackfriday\blackfirday.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\archday\exemplosExtras\jwt-samples\frontend\FrontEnd.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -59,14 +68,41 @@
     <Target Name="pedidosapi:Make">
         <MSBuild Projects="backend\pedidos-api\pedidosapi.dproj" Targets="Make"/>
     </Target>
+    <Target Name="KanbanaApi">
+        <MSBuild Projects="..\..\kanbana-api\KanbanaApi.dproj"/>
+    </Target>
+    <Target Name="KanbanaApi:Clean">
+        <MSBuild Projects="..\..\kanbana-api\KanbanaApi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="KanbanaApi:Make">
+        <MSBuild Projects="..\..\kanbana-api\KanbanaApi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="blackfirday">
+        <MSBuild Projects="..\exemplo-blackfriday\blackfirday.dproj"/>
+    </Target>
+    <Target Name="blackfirday:Clean">
+        <MSBuild Projects="..\exemplo-blackfriday\blackfirday.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="blackfirday:Make">
+        <MSBuild Projects="..\exemplo-blackfriday\blackfirday.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FrontEnd">
+        <MSBuild Projects="..\archday\exemplosExtras\jwt-samples\frontend\FrontEnd.dproj"/>
+    </Target>
+    <Target Name="FrontEnd:Clean">
+        <MSBuild Projects="..\archday\exemplosExtras\jwt-samples\frontend\FrontEnd.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FrontEnd:Make">
+        <MSBuild Projects="..\archday\exemplosExtras\jwt-samples\frontend\FrontEnd.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="ACPedidos;userapi;cadastroapi;pedidosapi"/>
+        <CallTarget Targets="ACPedidos;userapi;cadastroapi;pedidosapi;KanbanaApi;blackfirday;FrontEnd"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="ACPedidos:Clean;userapi:Clean;cadastroapi:Clean;pedidosapi:Clean"/>
+        <CallTarget Targets="ACPedidos:Clean;userapi:Clean;cadastroapi:Clean;pedidosapi:Clean;KanbanaApi:Clean;blackfirday:Clean;FrontEnd:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="ACPedidos:Make;userapi:Make;cadastroapi:Make;pedidosapi:Make"/>
+        <CallTarget Targets="ACPedidos:Make;userapi:Make;cadastroapi:Make;pedidosapi:Make;KanbanaApi:Make;blackfirday:Make;FrontEnd:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

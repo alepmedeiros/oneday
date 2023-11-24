@@ -1,0 +1,17 @@
+{
+	"name": "exemplo-blackfriday",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^3.1.5",
+		"github.com/hashload/horse-jwt": "^2.0.14",
+		"github.com/hashload/jhonson": "^1.1.6",
+		"github.com/viniciussanchez/dataset-serialize": "^v2.5.1",
+		"https://github.com/academiadocodigo/simpleorm": "^2.02.10",
+		"https://github.com/gabrielbaltazar/gbjson": "^1.0.11",
+		"https://github.com/viniciussanchez/restrequest4delphi": "^v4.0.11"
+	}
+}
